@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header active">
+        <!-- <div class="container"> -->
+        <div class="header__wrap">
+            <a href="#" class="header__logo">Site</a>
+            <div class="header__input">
+                <div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path
+                                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                            </path>
+                        </g>
+                    </svg>
+                    <input placeholder="Search" type="search" class="input">
+                </div>
+                <!-- <input type="text" class="input" placeholder="Search">
+                    <img src="./images/Magnifying glass.png" class="input__img" alt=""> -->
+            </div>
+            <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><button class="nav__btn btn">Log in</button></li>
+                <li class="nav__item"><button class="nav__btn2 btn">Sign up</button></li>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </header>
+    <div class="top">
+        <div class="top__wrap">
+            <div class="top__logo">
+                <button class="top__btn"><img src="./images/Chevron.png" class="logo__img" alt=""></button>
+                <a href="#" class="top__title">Logo</a>
+            </div>
+            <ul class="top__list">
+                <li class="list__item"><a href="#" class="list__link">About us</a></li>
+                <li class="list__item"><a href="#" class="list__link">Contact Us</a></li>
+                <li class="list__item"><a href="#" class="list__link">User info</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="main">
+        <!-- <div class="container"> -->
+         <div class="main__wrap">
+
+            <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide><a href="#"><img src="./images/bath.png" alt=""><span class="bath">bath</span></a></swiper-slide>
+                <swiper-slide><a href="#"><img class="kitchen" src="./images/kitchen.png" alt=""><span class="bath">Kitchen</span></a></swiper-slide>
+                <swiper-slide><a href="#"><img src="./images/livingroom.png" alt=""><span class="bath">Living Room</span></a></swiper-slide>
+              </swiper-container>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__contacts">
+                    <span class="contact__title">Contacts </span>
+                    <span class="contact__number">Phone: +1 989 102 02 01 </span>
+                    <span class="contact__email">E-mail: fantom@gmail.com </span>
+                </div>
+                <div class="footer__addresses">
+                    <span class="contact__address">Addresses </span>
+                    <span class="contact__address">Tashkent, Bogʻishamol 6 </span>
+                </div>
+                <div class="foooter__links">
+                    <span class="links__title">Follow us on:</span>
+                    <a href="#" class="link__facebook">Facebook</a>
+                    <a href="#" class="links__instagram">Instagram</a>
+                    <a href="#" class="links__twitter">Twitter</a>
+                </div>
+                <div class="additional">
+                <a href="#" class="privacy">Privacy Policy</a>
+                <a href="#" class="terms">Terms of Use</a>
+                
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
