@@ -32,7 +32,7 @@
             <ul class="nav">
                 <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
-                <li class="nav__item"><button class="nav__btn btn">Log in</button></li>
+                <li class="nav__item"><button onclick="showReg()" id="logInbtn" class="nav__btn btn">Log in</button></li>
                 <li class="nav__item"><button class="nav__btn2 btn">Sign up</button></li>
             </ul>
         </div>
@@ -55,14 +55,62 @@
         <!-- <div class="container"> -->
          <div class="main__wrap">
 
-            <swiper-container class="mySwiper" navigation="true">
+            <swiper-container class="mySwiper"  navigation="true" space-between="30">
                 <swiper-slide><a href="#"><img src="./images/bath.png" alt=""><span class="bath">bath</span></a></swiper-slide>
                 <swiper-slide><a href="#"><img class="kitchen" src="./images/kitchen.png" alt=""><span class="bath">Kitchen</span></a></swiper-slide>
                 <swiper-slide><a href="#"><img src="./images/livingroom.png" alt=""><span class="bath">Living Room</span></a></swiper-slide>
-              </swiper-container>
+                <!-- <button class="swiper-button-prev"><img src="./images/next.png" style="transform: rotate(180deg);" alt=""></button> -->
+              <!-- <button class="swiper-button-next"><img src="./images/next.png"   alt=""></button> -->
+              <!-- <div class="swiper-button-prev"><img src="./images/next.png" alt=""></div> -->
+              <!-- <div class="swiper-button-next"><img src="./images/next.png" alt=""></div> -->
+              </swiper-container>              
+              <button class="main__btn">Get Started</button>
         </div>
         </div>
     </section>
+    <div class="card" id="registration">
+        <div class="container">     
+       <div class="cancel"><button class="card__cancel" onclick="closeReg()" id="cancel"> <img src="./images/Cancel.png" alt=""></button></div>
+        <div class="card__wrap">
+        <div class="center">
+            <h2 class="center__title">
+                Sign in
+            </h2>
+            <input type="text" placeholder="Email or phone number" class="center__input">
+            <input type="password" placeholder="Password" required class="center__input">
+            <button class="center__btn">Log in</button>
+        </div>
+        <span class="card__text">New user? <a href="#" class="card__link">Sign up</a> </span>
+    </div>
+</div>
+    </div>
+    <div class="chat" id="chat">
+        <!-- <div class="container"> -->
+        <button class="openChat" onclick="toggleChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="49" viewBox="0 0 60 49" fill="none">
+                <path d="M0 20.09C0 8.9946 9.17816 0 20.5 0H39.5C50.8218 0 60 8.9946 60 20.09C60 30.2918 60 39.9602 60 47.5456C60 48.3596 59.0795 48.8308 58.4178 48.3569L47 40.18H20.5C9.17816 40.18 0 31.1854 0 20.09Z" fill="#2C4862"/>
+                <path d="M22 20.5806C22 22.2043 20.6569 23.5206 19 23.5206C17.3431 23.5206 16 22.2043 16 20.5806C16 18.9569 17.3431 17.6406 19 17.6406C20.6569 17.6406 22 18.9569 22 20.5806Z" fill="#F5F5F5"/>
+                <path d="M32 20.5806C32 22.2043 30.6569 23.5206 29 23.5206C27.3431 23.5206 26 22.2043 26 20.5806C26 18.9569 27.3431 17.6406 29 17.6406C30.6569 17.6406 32 18.9569 32 20.5806Z" fill="#F5F5F5"/>
+                <path d="M42 20.5806C42 22.2043 40.6569 23.5206 39 23.5206C37.3431 23.5206 36 22.2043 36 20.5806C36 18.9569 37.3431 17.6406 39 17.6406C40.6569 17.6406 42 18.9569 42 20.5806Z" fill="#F5F5F5"/>
+              </svg>    
+        </button>
+        <div class="chat__card">
+            <div class="chat__top">
+              <div class="profile">  <img src="./images/profile.png" alt="">
+                <h2 class="chat__top-title">Alice</h2>
+            </div>
+              <button class="chat-cancel" id="toggleBtn"  onclick="toggleChat()">  <img src="./images/Cancel.png" alt=""></button>
+            </div>
+            <div class="chat__main">
+                <p class="chat__main-text">
+                    Hello. How can I help you?
+                </p>
+                <input type="text" placeholder="Message" class="chat__main-input">
+                <button class="chat__main-btn" id="send-btn"><img src="./images/Send.png" alt=""></button>
+           </div>
+        </div>
+    </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
