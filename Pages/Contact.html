@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>   
+     <header class="header active">
+    <!-- <div class="container"> -->
+    <div class="header__wrap">
+        <a href="../main.html" class="header__logo">Site</a>
+
+
+        <ul class="nav">
+            <li class="nav__item"><a href="../Pages/About.html" class="nav__link">About us</a></li>
+            <li class="nav__item"><select name="User name" id="username">Username</select></li>
+        </ul>
+    </div>
+    <!-- </div> -->
+</header>
+<div class="top">
+    <div class="top__wrap">
+        <div class="top__logo">
+            <button class="top__btn"><a href="../main.html"><img src="../images/Chevron.png" class="logo__img"
+                        alt=""></a></button>
+            <a href="#" class="top__title">Logo</a>
+        </div>
+        <ul class="top__list">
+            <li class="list__item"><a href="../Pages/About.html" class="list__link">About us</a></li>
+            <li class="list__item"><a href="../Pages/Contact.html" class="list__link">Contact Us</a></li>
+            <li class="list__item"><a href="#" class="list__link">User info</a></li>
+        </ul>
+    </div>
+</div>
+    <section class="main__contact">
+        <div class="container">
+        <div class="main__contact__wrap">
+            <h1 class="contacts__title">
+                Contacts us
+            </h1>
+            <div class="input__title">
+                <p class="input__text">Title</p>
+                <input type="text" placeholder="Title" class="title_input">
+            </div>
+            <div class="contact__question">
+<p class="question__text">Question</p>
+<textarea placeholder="How can I.." class="question__input" id="" cols="30" rows="10"></textarea>
+<!-- <input type="text" placeholder="How can I.." class="question__input"> -->
+            </div>
+            <div class="contact__con">
+                <p class="contact__text">
+                    Contacts
+                </p>    
+                <input type="number" placeholder="+1 "class="contact__input">
+            </div>
+            <button class="main__contact-btn">Send</button>
+        </div>
+        </div>
+    </section>
+    <div class="chat" id="chat">
+        <!-- <div class="container"> -->
+        <button class="openChat" onclick="toggleChat()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="49" viewBox="0 0 60 49" fill="none">
+                <path d="M0 20.09C0 8.9946 9.17816 0 20.5 0H39.5C50.8218 0 60 8.9946 60 20.09C60 30.2918 60 39.9602 60 47.5456C60 48.3596 59.0795 48.8308 58.4178 48.3569L47 40.18H20.5C9.17816 40.18 0 31.1854 0 20.09Z" fill="#2C4862"/>
+                <path d="M22 20.5806C22 22.2043 20.6569 23.5206 19 23.5206C17.3431 23.5206 16 22.2043 16 20.5806C16 18.9569 17.3431 17.6406 19 17.6406C20.6569 17.6406 22 18.9569 22 20.5806Z" fill="#F5F5F5"/>
+                <path d="M32 20.5806C32 22.2043 30.6569 23.5206 29 23.5206C27.3431 23.5206 26 22.2043 26 20.5806C26 18.9569 27.3431 17.6406 29 17.6406C30.6569 17.6406 32 18.9569 32 20.5806Z" fill="#F5F5F5"/>
+                <path d="M42 20.5806C42 22.2043 40.6569 23.5206 39 23.5206C37.3431 23.5206 36 22.2043 36 20.5806C36 18.9569 37.3431 17.6406 39 17.6406C40.6569 17.6406 42 18.9569 42 20.5806Z" fill="#F5F5F5"/>
+              </svg>    
+        </button>
+        <div class="chat__card">
+            <div class="chat__top">
+              <div class="profile">  <img src="./images/profile.png" alt="">
+                <h2 class="chat__top-title">Alice</h2>
+            </div>
+              <button class="chat-cancel" id="toggleBtn"  onclick="toggleChat()">  <img src="./images/Cancel.png" alt=""></button>
+            </div>
+            <div class="chat__main">
+                <p class="chat__main-text">
+                    Hello. How can I help you?
+                </p>
+                <input type="text" placeholder="Message" class="chat__main-input">
+                <button class="chat__main-btn" id="send-btn"><img src="./images/Send.png" alt=""></button>
+           </div>
+        </div>
+    </div>
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__contacts">
+                    <span class="contact__title">Contacts </span>
+                    <span class="contact__number">Phone: +1 989 102 02 01 </span>
+                    <span class="contact__email">E-mail: fantom@gmail.com </span>
+                </div>
+                <div class="footer__addresses">
+                    <span class="contact__address">Addresses </span>
+                    <span class="contact__address">Tashkent, Bogʻishamol 6 </span>
+                </div>
+                <div class="foooter__links">
+                    <span class="links__title">Follow us on:</span>
+                    <a href="#" class="link__facebook">Facebook</a>
+                    <a href="#" class="links__instagram">Instagram</a>
+                    <a href="#" class="links__twitter">Twitter</a>
+                </div>
+                <div class="additional">
+                <a href="#" class="privacy">Privacy Policy</a>
+                <a href="#" class="terms">Terms of Use</a>
+                
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
